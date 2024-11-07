@@ -3,9 +3,6 @@
 This app is developed with Node.js and MongoDB, WS(Websocket) library.
 Online bidding items, with timer limits.
 
-
-![demo](biddingmini.gif)   
-
 ### features:
 
 Add item to the bids queue with a date to bid be started  
@@ -18,16 +15,7 @@ Item replace when a new item added in to DB and the time of the new item is less
 Item replace only happens when the bid time not started  
 Item can be sold or not  
 Next item and repeat to check a new item in queue or DB  
-User profile   
+User profile  
 Last/Highest bid are chosen and be saved in DB with the bidder information  
 Users can see their items and the status of the items, like (In queue, Sold, Not sold)  
-If an item sold, user can see the bidder(last bid) user information and contact him/her  
-
-
-
-
-
-### Full video
-
-[Youtube](https://www.youtube.com/watch?v=ASmErK8-OSc)
-
+If an item sold, user can see the bidder(last bid) user information and contact him/her

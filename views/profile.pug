@@ -55,20 +55,21 @@ include ./header
             .col-md-8(style='margin: auto')
                 form(method='post' action='/profile/additem' enctype="multipart/form-data" style='background-color: white; padding: 10px;')
                     .form-group
-                        p Item name
+                        p Player name
                         input.form-control(type='text' name='name' required)
                     .form-group
                         p Details
                         textarea.form-control(type='text' name='detail' required)
                     .form-group
-                        p Price in USD
+                        p Price in Lakhs
                         input.form-control(type='number' name='price' required)
                     .form-group
                         p Images
                         input.form-control(type='file' name='images' multiple required)
                     .form-group
-                        select.form-control(name='category' required)
+                        select.form-control(name='category' )
                             option(value='') -- Select Category --
+                           
                             for cat in categories
                                 option(value=cat._id)= cat.name
                     .form-group

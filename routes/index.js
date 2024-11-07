@@ -11,10 +11,13 @@ const initializePassport = require('./passport-config.js');
 const MongoStore = require('connect-mongo')(session);
 let mongoConnection = require('../models/db.js');
 let webpushCheck = require('./functions.js').webpushCheck;
+const http=require('http');
+
 
 router.use(flash());
 router.use(session({
     secret: 'secret',
+    
     resave: false,
     saveUninitialized: false,
     store: new MongoStore({
